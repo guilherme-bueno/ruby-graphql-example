@@ -498,7 +498,7 @@
               ]
             },
             {
-              "name": "testField",
+              "name": "ping",
               "description": "An example field added by the generator",
               "type": {
                 "kind": "NON_NULL",
@@ -513,6 +513,47 @@
               "deprecationReason": null,
               "args": [
 
+              ]
+            },
+            {
+              "name": "search",
+              "description": "Search endpoint",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "OBJECT",
+                      "name": "Item",
+                      "ofType": null
+                    }
+                  }
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null,
+              "args": [
+                {
+                  "name": "text",
+                  "description": "Search text",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
+                }
               ]
             }
           ],

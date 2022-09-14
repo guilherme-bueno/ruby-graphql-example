@@ -54,5 +54,15 @@ type Query {
   """
   An example field added by the generator
   """
-  testField: String!
+  ping: String!
+
+  """
+  Search endpoint
+  """
+  search(
+    """
+    Search text
+    """
+    text: String!
+  ): [Item!]!
 }
